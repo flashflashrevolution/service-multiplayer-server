@@ -1,0 +1,79 @@
+{
+    "configurations": [
+        {
+            "name": "Debug Server",
+            "type": "node",
+            "runtimeVersion": "15.1.0",
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+                "!**/node_modules/**"
+            ],
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "args": [
+                "src/server.ts"
+            ],
+            "runtimeArgs": [
+                "--nolazy",
+                "-r",
+                "ts-node/register"
+            ],
+            "env": {
+                "TS_NODE_PROJECT": "tsconfig.json"
+            },
+            "sourceMaps": true,
+            "internalConsoleOptions": "openOnSessionStart",
+            "preLaunchTask": "tsc: build - tsconfig.json"
+        },
+        {
+            "name": "Debug Client",
+            "type": "node",
+            "runtimeVersion": "15.1.0",
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+                "!**/node_modules/**"
+            ],
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "args": [
+                "src/client.ts"
+            ],
+            "runtimeArgs": [
+                "--nolazy",
+                "-r",
+                "ts-node/register"
+            ],
+            "env": {
+                "TS_NODE_PROJECT": "tsconfig.json"
+            },
+            "sourceMaps": true,
+            "internalConsoleOptions": "openOnSessionStart",
+            "preLaunchTask": "tsc: build - tsconfig.json"
+        },
+        {
+            "name": "Debug Current Library File",
+            "type": "node",
+            "runtimeVersion": "15.1.0",
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+                "!**/node_modules/**"
+            ],
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "args": [
+                "${relativeFile}"
+            ],
+            "runtimeArgs": [
+                "--nolazy",
+                "-r",
+                "ts-node/register"
+            ],
+            "env": {
+                "TS_NODE_PROJECT": "tsconfig.json"
+            },
+            "sourceMaps": true,
+            "internalConsoleOptions": "openOnSessionStart",
+            "preLaunchTask": "tsc: build - tsconfig.json"
+        }
+    ]
+}
