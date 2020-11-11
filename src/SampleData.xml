@@ -105,3 +105,25 @@
         </vars>
     </body>
 </msg>
+
+<!-- Recieve Message. -->
+<msg t='sys'>
+    <body action='pubMsg' r='2'>
+        <user id='200951' />
+        <txt><![CDATA[hello Nyan]]></txt>
+    </body>
+</msg>
+
+<!-- Send Message. -->
+<msg t='sys'>
+    <body action='pubMsg' r='2'>
+        <txt><![CDATA[test2]]></txt>
+    </body>
+</msg>
+
+<!-- User Leave. -->
+<msg t='sys'>
+    <body action='userGone' r='2'>
+        <user id='201393' />
+    </body>
+</msg>
