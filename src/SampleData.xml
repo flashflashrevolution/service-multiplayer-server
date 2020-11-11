@@ -1,3 +1,40 @@
+<!-- Checks the version. -->
+<msg t='sys'>
+    <body action='verChk' r='0'>
+        <ver v='158' />
+    </body>
+</msg>
+
+<!-- Recieve cross domain policy. -->
+<cross-domain-policy>
+    <allow-access-from domain='*' to-ports='8082' />
+</cross-domain-policy>
+
+<!-- Version check returned ok. -->
+<msg t='sys'>
+    <body action='apiOK' r='0'></body>
+</msg>
+
+<!-- Login to multiplayer. -->
+<msg t='sys'>
+    <body action='login' r='0'>
+        <login z='ffr_multiplayer'>
+            <nick><![CDATA[Zageron]]></nick>
+            <pword><![CDATA[hashofpassword?]]></pword>
+        </login>
+    </body>
+</msg>
+
+<!-- Get information about self.  -->
+<msg t='xt'>
+    <body action='xtRes' r='-1'><![CDATA[<dataObj><var n='userlevel' t='n'>61</var><var n='userID' t='n'>201945</var><var n='siteID' t='s'>1186339</var><var n='userclass' t='n'>7</var><var n='name' t='s'>Zageron</var><var n='usercolor' t='n'>10</var><var n='_cmd' t='s'>logOK</var></dataObj>]]></body>
+</msg>
+
+<!-- I guess this is the empty-room list info. -->
+<msg t='sys'>
+    <body action='getRmList' r='-1'></body>
+</msg>
+
 <!-- Send request for roomlist. -->
 <msg t='sys'>
     <body action='getRmList' r='2'></body>
