@@ -1,0 +1,107 @@
+<!-- Send request for roomlist. -->
+<msg t='sys'>
+    <body action='getRmList' r='2'></body>
+</msg>
+
+<!-- Get roomlist back. -->
+<msg t='sys'>
+    <body action='rmList' r='0'>
+        <rmList>
+            <rm id='1' priv='0' temp='0' game='0' ucnt='0' lmb='1' maxu='1000' maxs='0'>
+                <n><![CDATA[The Entrance]]></n>
+                <vars />
+            </rm>
+            <rm id='2' priv='0' temp='0' game='0' ucnt='32' maxu='1000' maxs='0'>
+                <n><![CDATA[Lobby]]></n>
+                <vars />
+            </rm>
+            <rm id='3499' priv='1' temp='1' game='1' ucnt='2' scnt='0' maxu='2' maxs='100'>
+                <n><![CDATA[pog]]></n>
+                <vars>
+                    <var n='P2_GAMELIFE' t='n'><![CDATA[0]]></var>
+                    <var n='GAME_MODE' t='n'><![CDATA[0]]></var>
+                    <var n='P1_GAMESCORES' t='s'><![CDATA[0:0:0:0:0:0:0:0:0]]></var>
+                    <var n='P2_GAMESCORES' t='s'><![CDATA[0:0:0:0:0:0:0:0:0]]></var>
+                    <var n='P1_GAMELIFE' t='n'><![CDATA[0]]></var>
+                    <var n='P2_SONGID_PROGRESS' t='n'><![CDATA[0]]></var>
+                    <var n='P2_NAME' t='s'><![CDATA[mlejay]]></var>
+                    <var n='P1_UID' t='s'><![CDATA[2032342]]></var>
+                    <var n='P2_UID' t='s'><![CDATA[2038113]]></var>
+                    <var n='P1_STATE' t='n'><![CDATA[4]]></var>
+                    <var n='GAME_RANKED' t='b'><![CDATA[1]]></var>
+                    <var n='GAME_LEVEL' t='n'><![CDATA[0]]></var>
+                    <var n='P1_SONGID' t='n'><![CDATA[2776]]></var>
+                    <var n='P1_SONGID_PROGRESS' t='n'><![CDATA[0]]></var>
+                    <var n='P1_NAME' t='s'><![CDATA[koolayedd]]></var>
+                    <var n='GAME_SCORE' t='n'><![CDATA[0]]></var>
+                    <var n='P2_STATE' t='n'><![CDATA[1]]></var>
+                </vars>
+            </rm>
+            <rm id='3501' priv='0' temp='1' game='1' ucnt='1' scnt='0' maxu='2' maxs='100'>
+                <n><![CDATA[a]]></n>
+                <vars>
+                    <var n='GAME_MODE' t='n'><![CDATA[0]]></var>
+                    <var n='P1_SONGID' t='n'><![CDATA[3381]]></var>
+                    <var n='P1_GAMESCORES' t='s'><![CDATA[0:0:0:0:0:0:0:0:0]]></var>
+                    <var n='P1_GAMELIFE' t='n'><![CDATA[0]]></var>
+                    <var n='P1_SONGID_PROGRESS' t='n'><![CDATA[0]]></var>
+                    <var n='P1_NAME' t='s'><![CDATA[Alexine]]></var>
+                    <var n='P1_UID' t='s'><![CDATA[2032965]]></var>
+                    <var n='P1_STATE' t='n'><![CDATA[2]]></var>
+                    <var n='GAME_RANKED' t='b'><![CDATA[1]]></var>
+                    <var n='GAME_SCORE' t='n'><![CDATA[0]]></var>
+                    <var n='GAME_LEVEL' t='n'><![CDATA[79]]></var>
+                    <var n='arc_engine1' t='s'><![CDATA[{"songID":"CP0028","engineID":"ffrmania","ffrlURL":"https://prawnskunk.com/ffrmania/simfiles/","songName":"Sleep Well","type":"ChartFFRL","songAuthor":"Selective Mood","stepAuthor":"","songLevel":3381}]]></var>
+                </vars>
+            </rm>
+            <rm id='3500' priv='0' temp='1' game='1' ucnt='2' scnt='1' maxu='2' maxs='100'>
+                <n><![CDATA[wanna play? heres a ]]></n>
+                <vars>
+                    <var n='P2_GAMELIFE' t='n'><![CDATA[0]]></var>
+                    <var n='GAME_MODE' t='n'><![CDATA[0]]></var>
+                    <var n='P2_GAMESCORES' t='s'><![CDATA[0:0:0:0:0:0:0:0:0]]></var>
+                    <var n='P1_GAMESCORES' t='s'><![CDATA[23915:147:243:254:54:125:191:1:59]]></var>
+                    <var n='P2_SONGID_PROGRESS' t='n'><![CDATA[0]]></var>
+                    <var n='P1_GAMELIFE' t='n'><![CDATA[5]]></var>
+                    <var n='P2_NAME' t='s'><![CDATA[ImaHotDawg]]></var>
+                    <var n='P1_UID' t='s'><![CDATA[2038108]]></var>
+                    <var n='arc_replay1' t='s'><![CDATA[FBRF|RkJSRgEAAQAfGVwAAAQ8P4AAAF+rCrkAWHsiYXZlcmFnZSI6NTQsImdvb2QiOjI1NCwibWF4Y29tYm8iOjU5LCJhbWF6aW5nIjoxNDcsImJvbyI6MTkxLCJtaXNzIjoxMjUsInBlcmZlY3QiOjI0M30COXsibm90ZVN3YXBDb2xvdXJzIjpbInJlZCIsImJsdWUiLCJwdXJwbGUiLCJ5ZWxsb3ciLCJwaW5rIiwib3JhbmdlIiwiY3lhbiIsImdyZWVuIiwid2hpdGUiXSwidmlld1BBQ291bnQiOnRydWUsInZpZXdBbWF6aW5nIjp0cnVlLCJzY3JlZW5jdXRQb3NpdGlvbiI6MC41LCJ2aWV3UGVyZmVjdCI6dHJ1ZSwibm90ZXNraW4iOjEwLCJ2aWV3VG90YWwiOmZhbHNlLCJmb3JjZU5ld0p1ZGdlIjpmYWxzZSwidmlld1NjcmVlbmN1dCI6ZmFsc2UsImRpcmVjdGlvbiI6ImRvd24iLCJ2aWV3U29uZ1Byb2dyZXNzIjp0cnVlLCJ2aWV3SnVkZ2UiOnRydWUsImZyYW1lUmF0ZSI6NjAsImdhcCI6ODAsInZpZXdIZWFsdGgiOnRydWUsImp1ZGdlT2Zmc2V0IjowLCJ2aWV3R2FtZVRvcEJhciI6dHJ1ZSwiYXV0b0p1ZGdlT2Zmc2V0IjpmYWxzZSwidmlzdWFsIjpbXSwidmlld0dhbWVCb3R0b21CYXIiOnRydWUsInZpZXdPZmZzZXQiOjAsImtleXMiOls4MSw4Nyw3OSw4MCwxOTEsMTcsMTQ1XSwidmlld1Njb3JlIjp0cnVlLCJub3RlU2NhbGUiOjEsInNwZWVkIjoxLjUsInNvbmdSYXRlIjoxLCJ2aWV3Q29tYm8iOnRydWV9AAAFUQAAAzjP2rW8usVgZeFt5Jvk+wsC6wrk69LX7Mjl6Rv77/TAxc3H299W2srPq6+2u+fr4+n0BMfY4paumTz9AX9/Rbd/50H3195/f39/f74oayGSR389NtA6FsLe2dij4PumyitO6Aluf2ZXHH9/KC2fxH+jq39/ktTQ6+IGFx4b2f4aAQUNTQi2fwSa03/Jf3+XnX+af3F/3yfZ9lLnfyV/1H+zufS48faZwH/j8vzvBvkXGuUL5cXj0df8Da/NHcroBvEfm9hs4TgD9hw84P3i6O/yf0p/9vK3x7cMn51/0r/F5gid6LtvoEkDCqfHf39V0cihf38MHrs//elHuEsiBAia3mt/7/GNnsl/fzsKD38PfwS0an9/8Q/Etru9wuzm/n+LC3+kJpZ/AwHl1NkEf0EVPlUYuuFpxMp/91bBOPJ/X42OjTB/YsWm4rR/f0MK/EMSx7+kqMx/jH+cjtV/DuYDu7UBBn9/8PowKhwhNCz1+y8rKRIafy67Exx/NdnNf8Hnn6NKf8xt2DsUJebRf25/KDnyf+7097P7838Lf39Bfyp/D39yEEIQf38BLX/hSX/jKCDa1IuzdIu/Ldxg4Ejrf6Z/XBtR3Co9G0iUTn9/Js/2H39EPtZ13FzUf7N/8xLNxa3qaX+aoKHIf6B/f21/4Wvd+n8m8tmfwX/cudTtJ//e4s/UrPN/0dXYjvUaprPzvcGzM96lAMd/Xgdov38q/n9H0vbJTI3MqZp/f59/vn+UltLXf3/cafhdB00gkt3/583rYqbBxtN/4unl69J/NDtBC+5pIm72X7O22O09SjVaDM9y+3/xHn9/26oH0reUf38B/OUm77v+/DYP17be2cap5cTM1Li+9++0r+vorADMCPLszce5tdzW6w4YfySexOqt1LnPy6Wf1rCZ2n/0GRbj3+/qDxTz9wj3f1h/T7//aQ+VSWB/H10fI+IEfzyUU5a067D/o/oVMOXFyuR/U2Hc6SUr1SgJ0Q8GjOnUo/gQ+iHjxAwG5vL06X9/a3/9UCrF47x/1H9/+11/aWZ/ZOsHf2oMan9/Nk1/vmoI5T79ChIvJU1LZUMS6qPLfxR/tH9/2t9/6wAAAL9EDRdIErBIByxEALxIAZBIAhAkB0QBFyIkQQKXRACfKHRCBbxBAJEiekEAtEgAp0QA10QBZCEqQgbQIW5CALpIAJ5EAIshREgBKSJkQgHoQQCiIn5BAIAifkEDjEIMQUIBd0EAoEQDP0ECs0gBzkICjEQAhkQBvUgE9UQAk0QBEEIBuEQBJ0IAkUQBbkEAhEQDbUIBNCRgQgMHQgRtRAFsInpIATtBAI5CAKIkKEEB0EQBkUgArUgBzkQAhUgAr0QFXSFZKC9CAKZEAIcidEgBDSIGQgEjSACWIQVIAUlCATtBAZtEAKAoByJtQQFHQgCLQQFhIndBAMJIASYickEAkUIAiUEB4EIBokQB9EEAgUQA7kQArkQBW0IAp0EAukEBE0QAtkEBgkIAoEQA2UEAzEQBQyJaKHBCAa0oK0IA2CQlQQGuSACNQQH6SACKQQFVQgF8RAG5QgZOQQCBSAFWQQDnQgCzQgEAKGdEAa1CArZEASFIAfdEAKFIAatCAOlEAjpCASlBAKZEAMNIAI1CApEhA0IWRUgNO0IA0ihORACjSAC+IlhBAIkoeSQDIjAkaUgApUQAkUIAs0EAk0QBi0IBtUgBPkQAwiIFQQCRQgewKG1BARJEAOlCALohXEgA8EgBKkgBLEIAxyh2QgHLIQYoXiRdIXVIAKRCANVEBUhCAMtIAKVEAJsiBihSQQDKqiA0dw==]]></var>
+                    <var n='GAME_RANKED' t='b'><![CDATA[1]]></var>
+                    <var n='P2_UID' t='s'><![CDATA[2037270]]></var>
+                    <var n='P1_STATE' t='n'><![CDATA[6]]></var>
+                    <var n='GAME_LEVEL' t='n'><![CDATA[0]]></var>
+                    <var n='P1_SONGID' t='n'><![CDATA[1084]]></var>
+                    <var n='P1_NAME' t='s'><![CDATA[kometoru]]></var>
+                    <var n='P1_SONGID_PROGRESS' t='n'><![CDATA[0]]></var>
+                    <var n='GAME_SCORE' t='n'><![CDATA[0]]></var>
+                    <var n='P2_STATE' t='n'><![CDATA[1]]></var>
+                </vars>
+            </rm>
+        </rmList>
+    </body>
+</msg>
+
+<!-- User join? -->
+<msg t='sys'>
+    <body action='uER' r='2'>
+        <u i ='200832' m='0'>
+            <n><![CDATA[Nomstien]]></n>
+            <vars></vars>
+        </u>
+    </body>
+</msg>
+
+<!-- User var updates for previous join. -->
+<msg t='sys'>
+    <body action='uVarsUpdate' r='2'>
+        <user id='200832' />
+        <vars>
+            <var n='MP_CLASS' t='n'><![CDATA[8]]></var>
+            <var n='GAME_VER' t='s'><![CDATA[R^3]]></var>
+            <var n='MP_STATUS' t='n'><![CDATA[0]]></var>
+            <var n='MP_LEVEL' t='n'><![CDATA[71]]></var>
+            <var n='MP_COLOR' t='n'><![CDATA[9]]></var>
+            <var n='UID' t='s'><![CDATA[2020715]]></var>
+        </vars>
+    </body>
+</msg>
