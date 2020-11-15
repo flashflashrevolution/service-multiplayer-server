@@ -1,6 +1,8 @@
 # Multiplayer Server
 
 ***Rought Draft*** - No guarantee for commands below to function.
+***NOTE*** These currently run in the Patreon database, so migrations will fuck up the migration table.
+Please don't run them, or delete the migration entry that gets added.
 
 Successor to the existing FFR multiplayer server implementation.
 
@@ -24,7 +26,7 @@ Successor to the existing FFR multiplayer server implementation.
 ## Running Migrations
 
 ```bash
-npm run typeorm migration:run -- --connection patreon --config ormconfig.production
+npm run typeorm migration:run -- --connection multiplayer --config ormconfig.production
 ```
 
 ## Building and Running in Docker for Testing
