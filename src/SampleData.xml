@@ -1,16 +1,16 @@
-<!-- Checks the version. -->
-<msg t='sys'>
-    <body action='verChk' r='0'>
-        <ver v='158' />
-    </body>
-</msg>
-
-<!-- Recieve cross domain policy. -->
+<!--
+    Recieve cross domain policy.
+    Might need to look at this to see what it's for in SFS specifically haha.
+    I guess if we want to add an extra check for CDP to prevent wasted packets...
+-->
 <cross-domain-policy>
     <allow-access-from domain='*' to-ports='8082' />
 </cross-domain-policy>
 
-<!-- Version check returned ok. -->
+<!--
+    Version check returned ok.
+    Probably don't need this.
+-->
 <msg t='sys'>
     <body action='apiOK' r='0'></body>
 </msg>

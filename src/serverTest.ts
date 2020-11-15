@@ -6,7 +6,7 @@ const port = 7552;
 
 // Use net.createServer() in your code. This is just for illustration purpose.
 // Create a new TCP server.
-const server = new Networking.Server();
+const server = new Networking.Server(OnClientConnection);
 
 // The server listens to a socket for a client to make a connection request.
 // Think of a socket as an end point.
@@ -19,17 +19,27 @@ server.listen(
     }
 );
 
+const clientList: Networking.Socket[] = [];
+
 // When a client requests a connection with the server, the server creates a new
 // socket dedicated to that client.
+function OnClientConnection(socket: Networking.Socket)
+{
+    console.log(socket);
+    console.log('A new connection has been established.');
+
+    // Now that a TCP connection has been established, the server can send data to
+    // the client by writing to its socket.
+    socket.write('Hello, client.');
+
+    clientList.push(socket);
+    console.log(clientList);
+}
 server.on(
     'connection',
     function (socket)
     {
-        console.log('A new connection has been established.');
-
-        // Now that a TCP connection has been established, the server can send data to
-        // the client by writing to its socket.
-        socket.write('Hello, client.');
+        
 
         // The server can also receive data from the client by reading from its socket.
         socket.on(
