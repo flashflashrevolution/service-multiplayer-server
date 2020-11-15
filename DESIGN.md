@@ -30,6 +30,17 @@ Outline of how the multiplayer server will function.
 - [ ] A user is flagged for loss of connectivity.
 - [ ] A user is retained for a certain amount of time since their disconnection.
 - [ ] ...
+- [ ] Rough Draft
+  - [ ]  A user is the representation of a player.
+  - [x] A user may have a connection to the server.
+  - [x] A user may have a serialized list of positive users.
+  - [x] A user may have a serialized list of negative users.
+  - [x] A user logs in.
+  - [ ] A user logs out.
+  - [ ] A user is pinged for connectivity.
+  - [ ] A user is flagged for loss of connectivity.
+  - [ ] A user is retained for a certain amount of time since their disconnection.
+  - [ ] ...
 
 ### Message
 
