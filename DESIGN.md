@@ -18,6 +18,25 @@ Outline of how the multiplayer server will function.
 >
 > **may**: Annotates a mechanism which is not required.
 
+### Connection
+
+- [ ] A connection is a representation of a client socket.
+- [ ] A connection is pinged for connectivity.
+- [ ] A connection can connect.
+- [ ] A connection can disconnect.
+- [ ] A connection has a client IP.
+- [ ] ...
+- [ ] Rough Draft
+  - [ ] Create connection
+  - [ ] Ask connection for API version.
+  - [ ] Accept connection's api version.
+  - [ ] Inform connection of API status.
+  - [ ] Ask connection for login. (Don't accept untill asked.)
+  - [ ] Receive connection session.
+  - [ ] Check session against known good sessions.
+  - [ ] Reject invalid session.
+  - [ ] Accept session and set connection as "good".
+
 ### User
 
 - [ ] A user is the representation of a player.
@@ -26,7 +45,6 @@ Outline of how the multiplayer server will function.
 - [ ] A user may have a serialized list of negative users.
 - [ ] A user logs in.
 - [ ] A user logs out.
-- [ ] A user is pinged for connectivity.
 - [ ] A user is flagged for loss of connectivity.
 - [ ] A user is retained for a certain amount of time since their disconnection.
 - [ ] ...
@@ -62,7 +80,7 @@ Outline of how the multiplayer server will function.
 - [ ] A channel moves users from subscribe list to idle list when a user goes idle.
 - [ ] ...
 
-### Session
+### Game
 
 - [ ] A session has a list of N>1 users.
 - [ ] A session accepts gameplay mechanism data.
