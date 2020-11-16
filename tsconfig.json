@@ -6,7 +6,8 @@
       "es2019"
     ],
     "types": [
-      "node"
+      "node",
+      "mocha"
     ],
     "declaration": true,
     "declarationMap": true,

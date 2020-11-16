@@ -1,11 +1,20 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-    "files.exclude": {
-      "**/.git": true,
-      "node_modules": true,
-    },
-    "debug.node.autoAttach": "off",
-    "files.eol": "\n",
-    "eslint.format.enable": true,
-    "typescript.tsdk": "node_modules/typescript/lib"
-  }
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.git": true,
+    "node_modules": true,
+  },
+  "files.insertFinalNewline": true,
+
+  "editor.formatOnSave": true,
+
+  "eslint.format.enable": true,
+
+  // Use the local typescript version.
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // Makes MochaExplorer function.
+  "mochaExplorer.files": "test/**/*.ts",
+  "mochaExplorer.require": "ts-node/register",
+}
